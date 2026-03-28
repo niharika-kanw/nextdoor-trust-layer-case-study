@@ -1,13 +1,11 @@
 {
   "name": "nextdoor-trust-layer-case-study",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "serve .",
+    "start": "serve ."
   },
-  "devDependencies": {
-    "vite": "^5.4.2"
+  "dependencies": {
+    "serve": "^14.2.1"
   }
 }
