@@ -25,8 +25,8 @@
     <header class="hero">
         <div class="container hero-content">
             <div class="badge">Feature Concept Demo</div>
-            <h1>Designing for Safety: The Nextdoor Trust Layer</h1>
-            <p class="subtitle">A concept exploring how to replace location based trust with actual, verified neighbor interactions.</p>
+            <h1>Designing for Dynamic Trust: The Nextdoor Trust Layer</h1>
+            <p class="subtitle">Nextdoor verifies identity, but not credibility. I designed a system to bridge that gap through contextual behavior signals.</p>
             
             <div class="role-details">
                 <div class="detail-box">
@@ -57,26 +57,38 @@
     <main class="container">
         <!-- 1. Overview -->
         <section id="overview" class="content-section">
-            <h2>1. Overview</h2>
+            <h2>1. The Core Insight</h2>
+            <p style="font-size: 1.25rem; color: #374151; font-weight: 500; margin-bottom: 40px;">
+                Nextdoor verifies who you are (Address), but not how you behave (Credibility).
+            </p>
             <div class="card-grid-2">
                 <div class="card problem-card">
-                    <h3>The Problem</h3>
-                    <p>Nextdoor's marketplace relies mostly on proximity, assuming we trust people because they live close by. But in reality, users still feel hesitant to meet up with strangers from the internet.</p>
+                    <h3>The Gap</h3>
+                    <p>Current trust is <strong>Static</strong>. You are trusted simply because you live nearby, even though you are a stranger. This leads to friction in high-stakes interactions.</p>
                 </div>
                 <div class="card solution-card">
-                    <h3>The Solution</h3>
-                    <p>I designed a <strong>Community Vouch System</strong> to add visible, friendly social proof to profiles and chat screens, helping users feel safe before agreeing to a meetup.</p>
+                    <h3>The Vision</h3>
+                    <p>Trust should be <strong>Dynamic</strong>. Users need visible social proof based on verified community interactions, not just physical proximity.</p>
                 </div>
             </div>
         </section>
 
-        <!-- 2. Problem Deep Dive -->
+        <!-- 2. Scenarios -->
         <section id="problem" class="content-section">
-            <h2>2. Understanding the Gap</h2>
-            <div class="text-content">
-                <p>When studying local online sales, the biggest hurdle is usually just getting past the initial "is this person safe?" feeling. Right now, trust on neighborhood apps is passive, meaning you see someone's general location, but that doesn't necessarily mean they are reliable.</p>
-                
-                <p>I noticed that typical 5 star rating systems don't really work well for neighbors either. Rating a neighbor 3 stars out of 5 feels overly critical, almost like you're judging an Uber driver instead of someone in your community.</p>
+            <h2>2. Where Trust Breaks Today</h2>
+            <div class="risk-grid">
+                <div class="risk-card">
+                    <strong>🛋️ Marketplace Risk</strong>
+                    <p>Buying $500 furniture from someone you've never met. Proximity doesn't guarantee a fair trade or physical safety.</p>
+                </div>
+                <div class="risk-card">
+                    <strong>🚨 Safety Uncertainty</strong>
+                    <p>An urgent alert about a "suspicious car." Without a credibility signal, users can't tell if the reporter is reliable or fear mongering.</p>
+                </div>
+                <div class="risk-card">
+                    <strong>🔧 Referral Bias</strong>
+                    <p>A recommendation for a contractor. Is the neighbor actually happy with the work, or just recommending a friend?</p>
+                </div>
             </div>
         </section>
 
@@ -154,60 +166,61 @@
             </div>
         </section>
 
-        <!-- 7. Metrics -->
+        <!-- 7. Impact -->
         <section id="metrics" class="content-section">
-            <h2>7. Measuring Success</h2>
+            <h2>7. The Impact</h2>
             <div class="metrics-grid">
                 <div class="metric">
                     <span class="arrow up">↑</span>
-                    <strong>Chat to Meetup Rate</strong>
-                    <p>Are more people actually following through and meeting up after starting a conversation?</p>
+                    <strong>Reduced Friction</strong>
+                    <p>Faster decisions in the marketplace because credibility is established before the first message.</p>
                 </div>
                 <div class="metric">
                     <span class="arrow down">↓</span>
-                    <strong>Ghosting/Abandonment</strong>
-                    <p>A drop in conversations that just suddenly stop right before planning a location.</p>
+                    <strong>Misinformation Drop</strong>
+                    <p>Less "Fear Amplification" in safety alerts when users can see the reporter's verified community standing.</p>
                 </div>
                 <div class="metric">
                     <span class="arrow up">↑</span>
-                    <strong>Feedback Loop Usage</strong>
-                    <p>Are people actually interacting with the new post trade chat prompt?</p>
+                    <strong>Offline Success</strong>
+                    <p>Higher conversion from "Start Chat" to "Successful Offline Meetup" through behavioral assurance.</p>
+                </div>
+            </div>
+        <section id="tradeoffs" class="content-section" style="margin-top: 80px; padding-top: 60px; border-top: 1px solid #EEE;">
+            <h2>8. Tradeoffs & Product Thinking</h2>
+            <p style="margin-bottom: 30px;">Recruiters often ask, <em>"If this makes so much sense, why hasn't Nextdoor built it yet?"</em> I identified three core product tradeoffs that make this a complex challenge:</p>
+            <div class="card-grid-2" style="font-size: 0.95rem; gap: 40px;">
+                <div>
+                    <strong style="color: #6366F1; display: block; margin-bottom: 8px;">Bias vs. Betterment</strong>
+                    <p style="color: #4B5563;">Reputation systems can inadvertently reinforce existing biases or social hierarchies. My solution avoids subjective "Star Ratings" in favor of <strong>Verified Behavioral Data</strong> (e.g., "X successful transactions") to keep the focus on objective credibility.</p>
+                </div>
+                <div>
+                    <strong style="color: #6366F1; display: block; margin-bottom: 8px;">Trust vs. Yelp-ification</strong>
+                    <p style="color: #4B5563;">Adding too much friction or data can turn a community app into a transactional directory. I designed the Trust Layer to be <strong>Contextual</strong>—it only appears when a high-stakes decision is needed, protecting the casual "Community Chat" feel of the platform.</p>
+                </div>
+                <div>
+                    <strong style="color: #6366F1; display: block; margin-bottom: 8px;">Privacy vs. Transparency</strong>
+                    <p style="color: #4B5563;">Aggregating behavioral data raises privacy concerns. The product requirement for this system would be <strong>Local Anonymization</strong>: showing a user's standing within a neighborhood without exposing their full activity history to strangers.</p>
+                </div>
+                <div style="background: #F9FAFB; padding: 24px; border-radius: 12px; border: 1px solid #E5E7EB;">
+                    <strong style="color: var(--nd-green); display: block; margin-bottom: 8px;">The Takeaway</strong>
+                    <p style="color: #111827; font-weight: 500; font-style: italic;">"Building trust in local communities isn't just about UI—it's about managing human risk through responsible system design."</p>
                 </div>
             </div>
         </section>
-
     </main>
 
-    <!-- Bonus: Spatial 3D UI Concept -->
-    <div style="background-color: #0B0E14; color: white; padding: 100px 5%; margin-top: 60px; text-align: center;">
-        <div style="max-width: 1400px; margin: 0 auto;">
-            <div style="display: inline-block; padding: 6px 16px; border-radius: 100px; border: 1px solid rgba(255,255,255,0.2); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 24px;">Vision Concept</div>
-            <h2 style="font-size: 2.8rem; margin-bottom: 24px; font-weight: 700;">Spatial Interaction: Reimagining the Neighborhood Feed</h2>
-            <p style="max-width: 850px; margin: 0 auto 60px; color: #9CA3AF; font-size: 1.15rem; line-height: 1.7;">
-                Most community apps rely on linear lists. I explored a <strong>Spatial Interaction Model</strong> that prioritizes hyper local context. By using <strong>Depth Scaling</strong>, meaning closer activity is physically larger and sharper while distant noise blurs out, the UI creates a natural focus on what matters most to the user in their immediate 2 minute radius.
-            </p>
-
-            <div class="card-grid-2" style="max-width: 1400px; margin-bottom: 40px; text-align: left; gap: 40px;">
-                <div>
-                    <h3 style="color: #FFF; margin-bottom: 16px; font-size: 1.4rem;">1. The Macro View</h3>
-                    <p style="color: #9CA3AF; margin-bottom: 24px; font-size: 1rem;">A 3D perspective of the neighborhood where posts live on top of physical blocks. Uses intersection snapping to protect privacy.</p>
-                    <img src="Spatial_Concept.png" width="100%" alt="Nextdoor Spatial UI 3D Concept" style="border-radius: 16px; box-shadow: 0 40px 100px rgba(0,0,0,0.8);" />
-                </div>
-                <div>
-                    <h3 style="color: #FFF; margin-bottom: 16px; font-size: 1.4rem;">2. Deep Context Expansion</h3>
-                    <p style="color: #9CA3AF; margin-bottom: 24px; font-size: 1rem;">Tapping a card dims the map and expands the conversation, maintaining spatial orientation while focusing on the thread.</p>
-                    <img src="Spatial_Expanded.png" width="100%" alt="Nextdoor Spatial Interaction Expanded" style="border-radius: 16px; box-shadow: 0 40px 100px rgba(0,0,0,0.8);" />
-                </div>
-            </div>
-
-            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 32px; border-radius: 16px; max-width: 1000px; margin: 60px auto 0; text-align: left;">
-                <h4 style="color: #FFF; margin-bottom: 12px; font-size: 1.1rem; font-weight: 600;">How this works (The Interaction Story)</h4>
-                <p style="color: #9CA3AF; font-size: 0.95rem; line-height: 1.6;">
-                    Recruiters often ask how "cool UI" solves real problems. In this system, zooming into the map increases the progressive detail of posts, while zooming out aggregates them into active heat clusters. This allows a user to instantly understand if their neighborhood is "safe and quiet" or "highly active" at a single glance, which is a significant improvement over scrolling through 50 separate text posts.
-                </p>
-            </div>
+    <!-- Link to the Separated Spatial Vision Concept -->
+    <div style="background-color: #F9FAFB; border-top: 1px solid #EEE; padding: 100px 5%; text-align: center;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="badge" style="border-color: #10B981; color: #10B981;">Bonus: Innovation</div>
+            <h2 style="font-size: 2.5rem; margin-top: 24px; font-weight: 700;">Wait, there's more.</h2>
+            <p style="color: #6B7280; font-size: 1.1rem; margin: 24px 0 40px; line-height: 1.6;">I also explored how Nextdoor could evolve from a linear app to a spatial interaction model, prioritizing local focus through depth scaling and 3D perspectives.</p>
+            <a href="spatial.html" style="background-color: #111827; color: white; padding: 16px 36px; border-radius: 100px; font-weight: 600; text-decoration: none; font-size: 1.1rem; border: 1px solid rgba(255,255,255,0.1); transition: 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">Explore the Vision Concept →</a>
         </div>
     </div>
+
+
 
     <footer>
         <div class="container footer-content">

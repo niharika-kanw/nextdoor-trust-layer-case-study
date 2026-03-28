@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextdoor Spatial Vision | Interaction Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background-color: #0B0E14; color: white; }
+        .vision-hero {
+            padding: 120px 5%;
+            text-align: center;
+            background: radial-gradient(circle at center, #1a1f2e 0%, #0B0E14 100%);
+        }
+        .vision-container { max-width: 1200px; margin: 0 auto; padding-bottom: 100px; }
+        .story-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 80px;
+            text-align: left;
+        }
+        .visual-block { margin-bottom: 120px; text-align: left; }
+        .visual-block h3 { font-size: 2rem; margin-bottom: 16px; color: #FFF; }
+        .visual-block p { color: #9CA3AF; margin-bottom: 32px; font-size: 1.1rem; max-width: 800px; line-height: 1.7; }
+        .vision-img {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 60px 120px rgba(0,0,0,0.8);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #10B981;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <nav style="background: rgba(11, 14, 20, 0.8);">
+        <div class="container nav-content">
+            <a href="index.html" class="back-link" style="margin-top: 0;">← Back to Trust Layer</a>
+            <div class="nav-links">
+                <span style="color: #9CA3AF;">Project 02: Spatial Vision</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="vision-hero">
+        <div class="badge" style="border-color: rgba(255,255,255,0.3); color: #FFF;">Vision Concept 2026</div>
+        <h1 style="font-size: 4rem; margin-top: 20px; font-weight: 800; background: linear-gradient(to right, #FFF, #6366F1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Beyond the Feed: Spatial Interactions</h1>
+        <p class="subtitle" style="color: #9CA3AF; max-width: 700px; margin: 24px auto;">Reimagining the neighborhood community from a linear list into a hyper-local interaction model.</p>
+    </header>
+
+    <div class="vision-container">
+        
+        <div class="story-card">
+            <h2 style="color: #10B981; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px;">The Problem</h2>
+            <p style="font-size: 1.4rem; line-height: 1.5; color: #FFF; margin-bottom: 24px;">
+                Neighbors cannot quickly determine what is happening near them because relevant information is buried in a linear feed.
+            </p>
+            <div style="height: 1px; background: rgba(255,255,255,0.1); margin-bottom: 24px;"></div>
+            <h2 style="color: #10B981; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px;">The Solution</h2>
+            <p style="color: #9CA3AF; font-size: 1.1rem; line-height: 1.8;">
+                Instead of scrolling through dozens of posts, users can instantly understand what’s happening around them based on proximity and activity density. For example, if a neighbor hears a loud noise, the closest and most active discussion surfaces immediately, <strong>reducing the time to find relevant local information from minutes to seconds.</strong>
+            </p>
+        </div>
+
+        <div class="visual-block">
+            <h3>01. Physical Grounding</h3>
+            <p>A 3D perspective where posts are tethered to physical locations, allowing users to differentiate between a "Neighborhood Alert" and a "Street-Level Crisis" instantly.</p>
+            <img src="Spatial_Concept.png" class="vision-img" alt="Nextdoor Spatial UI 3D Concept">
+        </div>
+
+        <div class="visual-block">
+            <h3>02. Depth Focus</h3>
+            <p>Adaptive map dimming maintains the user's spatial orientation while they focus on a high-stakes conversation thread. Depth scaling ensures that closer activity is physically larger and sharper while distant noise blurs out.</p>
+            <img src="Spatial_Expanded.png" class="vision-img" alt="Nextdoor Spatial Interaction Expanded">
+        </div>
+
+        <div style="text-align: center; margin-top: 100px;">
+            <a href="index.html" class="back-link" style="font-size: 1.4rem;">← Return to the Nextdoor Trust Layer Study</a>
+        </div>
+
+    </div>
+
+    <footer style="background: transparent; border-top: 1px solid rgba(255,255,255,0.1);">
+        <div class="container footer-content">
+            <p style="color: #6B7280;">Spatial Interaction Exploration by Niharika Kanwar (2026).</p>
+        </div>
+    </footer>
+
+</body>
+</html>
