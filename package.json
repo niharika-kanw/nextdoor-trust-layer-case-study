@@ -2,8 +2,8 @@
   "name": "nextdoor-trust-layer-case-study",
   "version": "1.0.0",
   "scripts": {
-    "dev": "serve .",
-    "start": "serve ."
+    "dev": "npx serve . -p 3000",
+    "start": "npx serve . -p 3000"
   },
   "dependencies": {
     "serve": "^14.2.1"
