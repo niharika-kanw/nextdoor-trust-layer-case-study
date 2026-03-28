@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextdoor Trust Layer | Product Design Concept</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">Niharika Kanwar <span>Product Design Portfolio</span></div>
+            <div class="nav-links">
+                <a href="#overview">Overview</a>
+                <a href="#problem">Problem</a>
+                <a href="#solution">Solution</a>
+                <a href="#metrics">Metrics</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="badge">Feature Concept Demo</div>
+            <h1>Designing for Safety: The Nextdoor Trust Layer</h1>
+            <p class="subtitle">A concept exploring how to replace location based trust with actual, verified neighbor interactions.</p>
+            
+            <div class="role-details">
+                <div class="detail-box">
+                    <strong>Role</strong>
+                    <span>Product Designer</span>
+                </div>
+                <div class="detail-box">
+                    <strong>Timeline</strong>
+                    <span>1 Day Prototype</span>
+                </div>
+                <div class="detail-box">
+                    <strong>Focus</strong>
+                    <span>UI/UX, Problem Solving</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div style="max-width: 1600px; margin: 0 auto; padding: 0 5%;">
+        <!-- Full PDF Visual Embed Section -->
+        <section id="visuals" class="visual-section">
+            <div class="pdf-container" style="background-color: transparent; border: none; box-shadow: none; padding: 0;">
+                <img src="Nextdoor_Case_Study.png" width="100%" alt="Nextdoor Case Study Screens" style="border-radius: 12px; display: block; box-shadow: 0 10px 40px rgba(0,0,0,0.15);" />
+            </div>
+        </section>
+    </div>
+
+    <main class="container">
+        <!-- 1. Overview -->
+        <section id="overview" class="content-section">
+            <h2>1. Overview</h2>
+            <div class="card-grid-2">
+                <div class="card problem-card">
+                    <h3>The Problem</h3>
+                    <p>Nextdoor's marketplace relies mostly on proximity, assuming we trust people because they live close by. But in reality, users still feel hesitant to meet up with strangers from the internet.</p>
+                </div>
+                <div class="card solution-card">
+                    <h3>The Solution</h3>
+                    <p>I designed a <strong>Community Vouch System</strong> to add visible, friendly social proof to profiles and chat screens, helping users feel safe before agreeing to a meetup.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Problem Deep Dive -->
+        <section id="problem" class="content-section">
+            <h2>2. Understanding the Gap</h2>
+            <div class="text-content">
+                <p>When studying local online sales, the biggest hurdle is usually just getting past the initial "is this person safe?" feeling. Right now, trust on neighborhood apps is passive, meaning you see someone's general location, but that doesn't necessarily mean they are reliable.</p>
+                
+                <p>I noticed that typical 5 star rating systems don't really work well for neighbors either. Rating a neighbor 3 stars out of 5 feels overly critical, almost like you're judging an Uber driver instead of someone in your community.</p>
+            </div>
+        </section>
+
+        <!-- 3. Business Value -->
+        <section class="content-section">
+            <h2>3. Why This Matters</h2>
+            <p>Solving this hesitation is important for the app's overall health:</p>
+            <ul class="impact-list">
+                <li>If users feel unsure about safety, they might start a chat but abandon the sale.</li>
+                <li>Fewer completed sales mean the marketplace feature gets used less over time.</li>
+                <li>Improving trust directly improves how often neighbors actually engage with each other offline.</li>
+            </ul>
+        </section>
+
+        <!-- 4. Ideation -->
+        <section class="content-section">
+            <h2>4. Exploring Directions</h2>
+            <div class="timeline">
+                <div class="timeline-item rejected">
+                    <div class="icon">⭐</div>
+                    <div>
+                        <strong>Standard Star Ratings (Rejected)</strong>
+                        <p>Decided against this because it felt too judgmental for a community app. Neighbors shouldn't be giving each other "review scores."</p>
+                    </div>
+                </div>
+                <div class="timeline-item rejected">
+                    <div class="icon">🪪</div>
+                    <div>
+                        <strong>Identity Verification Badges (Helpful, but incomplete)</strong>
+                        <p>While an ID check proves someone is real, it doesn't tell a buyer if that person actually shows up to trades on time.</p>
+                    </div>
+                </div>
+                <div class="timeline-item chosen">
+                    <div class="icon">🤝</div>
+                    <div>
+                        <strong>Community "Vouches" (Chosen Concept)</strong>
+                        <p>Instead of numbers, users simply explicitly "vouch" for a good experience. It feels much warmer and fits Nextdoor's friendly brand voice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Final Solution Breakdowns -->
+        <section id="solution" class="content-section">
+            <h2>5. Walking Through the Design</h2>
+            
+            <div class="feature-block">
+                <h3>A. The Seller Profile</h3>
+                <p>I added a "Community Standing" card specifically showing Local Trades Completed, Show Up Rate, and Neighbor Vouches. This gives a buyer immediate reassurance before they even send a message.</p>
+            </div>
+
+            <div class="feature-block">
+                <h3>B. In Chat Safety Banner</h3>
+                <p>Since the actual decision to meet happens in the chat, I added a lightweight banner (e.g., "You are messaging a Highly Vouched Neighbor"). Positive reinforcement right at the moment of decision making can really reduce anxiety.</p>
+            </div>
+
+            <div class="feature-block">
+                <h3>C. The Feedback Prompt</h3>
+                <p>To keep the system going, I designed an automated, friendly chat prompt that asks "Did you complete this trade?" after a bit of time passes, making it super easy to leave a vouch without digging through menus.</p>
+            </div>
+        </section>
+
+        <!-- 6. Edge Cases -->
+        <section class="content-section edge-cases">
+            <h2>6. What could go wrong? (Edge Cases)</h2>
+            <div class="risk-grid">
+                <div class="risk-card">
+                    <strong>🛡️ Fake Vouches</strong>
+                    <p><em>My thought:</em> To prevent friends from just vouching for each other, the system should only allow a vouch if both users interacted in the marketplace chat first.</p>
+                </div>
+                <div class="risk-card">
+                    <strong>❄️ Penalizing New Users</strong>
+                    <p><em>My thought:</em> If someone is brand new, seeing "0 Vouches" looks sketchy. Instead, I designed a "New Neighbor" tag to set expectations without making them look untrustworthy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Metrics -->
+        <section id="metrics" class="content-section">
+            <h2>7. Measuring Success</h2>
+            <div class="metrics-grid">
+                <div class="metric">
+                    <span class="arrow up">↑</span>
+                    <strong>Chat to Meetup Rate</strong>
+                    <p>Are more people actually following through and meeting up after starting a conversation?</p>
+                </div>
+                <div class="metric">
+                    <span class="arrow down">↓</span>
+                    <strong>Ghosting/Abandonment</strong>
+                    <p>A drop in conversations that just suddenly stop right before planning a location.</p>
+                </div>
+                <div class="metric">
+                    <span class="arrow up">↑</span>
+                    <strong>Feedback Loop Usage</strong>
+                    <p>Are people actually interacting with the new post trade chat prompt?</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <h2>Let's build kinder neighborhoods.</h2>
+            <p>Case study prepared by Niharika Kanwar (2026).</p>
+        </div>
+    </footer>
+
+</body>
+</html>
