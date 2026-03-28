@@ -29,7 +29,7 @@ body {
     color: var(--text-primary);
     background-color: var(--bg-page);
     line-height: 1.75;
-    font-size: 17px;
+    font-size: 19px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: 'cv11', 'ss01';
@@ -61,7 +61,7 @@ nav {
 .logo {
     font-family: var(--font-serif);
     font-weight: 400;
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     color: var(--text-primary);
     letter-spacing: -0.01em;
 }
@@ -70,7 +70,7 @@ nav {
     font-family: var(--font-sans);
     color: var(--text-muted);
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     margin-left: 12px;
     padding-left: 12px;
     border-left: 1px solid var(--border-color);
@@ -82,7 +82,7 @@ nav {
     text-decoration: none;
     color: var(--text-muted);
     margin-left: 32px;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: 500;
     transition: color 0.25s ease;
     letter-spacing: 0;
@@ -103,7 +103,7 @@ nav {
 .badge {
     display: inline-block;
     color: var(--nd-green);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     margin-bottom: 32px;
     text-transform: uppercase;
@@ -112,7 +112,7 @@ nav {
 
 .hero h1 {
     font-family: var(--font-serif);
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 400;
     letter-spacing: -0.02em;
     line-height: 1.1;
@@ -124,9 +124,9 @@ nav {
 }
 
 .subtitle {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     color: var(--text-secondary);
-    max-width: 540px;
+    max-width: 600px;
     margin: 0 auto 56px;
     line-height: 1.7;
     font-weight: 400;
@@ -150,7 +150,7 @@ nav {
 }
 
 .detail-box strong {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--text-muted);
@@ -162,7 +162,7 @@ nav {
     font-family: var(--font-serif);
     font-weight: 400;
     color: var(--text-primary);
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     letter-spacing: 0;
 }
 
@@ -178,7 +178,7 @@ nav {
 
 .content-section h2 {
     font-family: var(--font-serif);
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 400;
     margin-bottom: 32px;
     letter-spacing: -0.01em;
@@ -234,7 +234,7 @@ nav {
 .problem-card h3 {
     font-family: var(--font-serif);
     font-weight: 400;
-    font-size: 1.35rem;
+    font-size: 1.45rem;
     color: #C53030;
     margin-bottom: 14px;
 }
@@ -242,7 +242,7 @@ nav {
 .solution-card h3 {
     font-family: var(--font-serif);
     font-weight: 400;
-    font-size: 1.35rem;
+    font-size: 1.45rem;
     color: var(--nd-green);
     margin-bottom: 14px;
 }
@@ -320,7 +320,7 @@ ul.impact-list li {
 
 .feature-block h3 {
     font-family: var(--font-serif);
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     margin-bottom: 10px;
     color: var(--text-primary);
     font-weight: 400;
@@ -329,7 +329,7 @@ ul.impact-list li {
 
 .feature-block p {
     color: var(--text-secondary);
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.8;
 }
 
